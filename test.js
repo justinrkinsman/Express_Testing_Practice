@@ -2,6 +2,7 @@ const index = require('./index')
 
 const request = require('supertest')
 const express = require('express')
+const initializeMongoServer = require('./mongoConfigTesting')
 const app = express()
 
 app.use(express.urlencoded({ extended: false }))
