@@ -10,7 +10,7 @@ app.use('/', index)
 test('index route works', done => {
     request(app)
         .get('/')
-        .expect('Content-Type', '/json/')
+        .expect('Content-Type', 'application/json; charset=utf-8')
         .expect({ name: "frodo" })
         .expect(200, done)
 })
